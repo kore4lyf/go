@@ -42,12 +42,9 @@ func main() {
 	currentTerm := uint(0)
 	sumOfEvenTerms := uint(2)
 
-	// Print the first two terms
-	fmt.Printf("%d %d ", term1, term2)
-
+	// find the sum of evened-valued term below 4000000
 	for ; currentTerm <= 4000000; {
 		currentTerm = term1 + term2
-		fmt.Printf("%d ", currentTerm)
 
 		term1 = term2
 		term2 = currentTerm
